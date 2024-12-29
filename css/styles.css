@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body {
+    min-height: 100vh;
+    background: rgb(97, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background: #dadada;
+    overflow: hidden;
+    
+}
+
+.screen {
+    width: 250px;
+    height: 40px;
+    background-color: #e7eded;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: right;
+    pointer-events: none;
+}
+
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    width: 60px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #686868;
+}
+
+/* Efecto cuando se presiona el botón */
+button:active {
+    background-color: #858585;
+}
+
+
+.btn-op {
+    background: rgb(155, 155, 155);
+    color: #ffffff;
+}
+.btn-grey {
+    background: #444444;
+    color: #d6d6d6;
+}
+.btn-equal {
+    background: rgb(175, 175, 175);
+    color: #fff;
+}
+.btn-clear {
+    background: rgb(223, 10, 10);
+    color: #fff;
+}
